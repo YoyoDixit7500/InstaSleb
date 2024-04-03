@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rr"
+    android:background="@drawable/backgroung2"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/vardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/bg_forll"
+        android:fadingEdgeLength="12dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="204dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingTop="20dp"
+            android:text="By clicking Continue,
+  I Agree That I Am At Least 14 Year Old"
+            android:textAlignment="center"
+            android:textColor="#EEEFEE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:text=" No,I'm Not 14 "
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="#3E042E"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_marginTop="34dp"
+                android:textAlignment="inherit"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_forcardview"
+                android:text=" Yes,Continue "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/platfom4"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/platform"
+        />
+
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vardview"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/message_right"
+        android:paddingTop="4dp"
+        android:text="   Are U 14 Years Or Older?"
+        android:textColor="#72165C"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/platform"
+        android:layout_below="@id/logo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="-269dp"
+        android:layout_marginRight="-150dp"
+        android:layout_marginBottom="-36dp"
+        android:src="@drawable/terms" />
+
+
+</RelativeLayout>
+
+
+
